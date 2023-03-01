@@ -1,0 +1,5 @@
+SELECT year, SUM(number) as num, name
+FROM `bigquery-public-data.usa_names.usa_1910_current`
+WHERE name = 'Harry' and year > 1990
+GROUP BY year, name
+ORDER BY num DESC
