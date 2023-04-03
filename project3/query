@@ -1,0 +1,3 @@
+SELECT state_name, subpopulation, value
+FROM `bigquery-public-data.america_health_rankings.ahr`
+WHERE (state_name = 'Georgia' OR state_name = 'Alabama' OR state_name = 'Mississippi' OR state_name = 'South Carolina') AND measure_name = 'Able-Bodied'
